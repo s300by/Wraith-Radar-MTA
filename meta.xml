@@ -1,0 +1,60 @@
+<meta>
+    <info author="S300by (MTA:SA port) - based on Wraith ARS 2X by WolfKnight" version="1.0.0" type="script"
+          name="Wraith ARS 2X" description="Wraith ARS 2X police speed radar + ALPR plate reader for MTA:SA - port by S300by (Discord: S300by)" />
+
+    <!-- CLIENT: the compat shim MUST be first, integration.lua last -->
+    <script src="compat.lua"          type="client" cache="false" />
+    <script src="config.lua"          type="client" cache="false" />
+    <script src="config_access.lua"   type="client" cache="false" />
+    <script src="cl_utils.lua"        type="client" cache="false" />
+    <script src="cl_player.lua"       type="client" cache="false" />
+    <script src="cl_radar.lua"        type="client" cache="false" />
+    <script src="cl_plate_reader.lua" type="client" cache="false" />
+    <script src="cl_sync.lua"         type="client" cache="false" />
+    <script src="integration.lua"     type="client" cache="false" />
+
+    <!-- SERVER -->
+    <script src="compat_sv.lua"       type="server" />
+    <script src="config_access.lua"   type="server" />
+    <script src="sv_sync.lua"         type="server" />
+    <script src="sv_exports.lua"      type="server" />
+    <script src="sv_settings.lua"     type="server" />
+    <script src="integration_sv.lua"  type="server" />
+
+    <export function="TogglePlateLock" type="server" />
+
+    <file src="nui/fonts/Heebo-Bold.ttf" />
+    <file src="nui/fonts/Heebo-Regular.ttf" />
+    <file src="nui/fonts/Segment7Standard.otf" />
+    <file src="nui/fonts/plate-font-hilite.ttf" />
+    <file src="nui/fonts/plate-font-lolite.ttf" />
+    <file src="nui/fonts/plate-font-shadow.ttf" />
+    <file src="nui/fonts/plate-font.ttf" />
+    <file src="nui/images/bg.png" />
+    <file src="nui/images/bg_left.png" />
+    <file src="nui/images/bg_right.png" />
+    <file src="nui/images/frame.png" />
+    <file src="nui/images/plates/0.png" />
+    <file src="nui/images/plates/1.png" />
+    <file src="nui/images/plates/2.png" />
+    <file src="nui/images/plates/3.png" />
+    <file src="nui/images/plates/4.png" />
+    <file src="nui/images/plates/5.png" />
+    <file src="nui/images/pr_bg.png" />
+    <file src="nui/images/pr_frame.png" />
+    <file src="nui/images/rc_bg.png" />
+    <file src="nui/jquery.js" />
+    <file src="nui/radar.css" />
+    <file src="nui/radar.html" />
+    <file src="nui/radar.js" />
+    <file src="nui/sounds/away.ogg" />
+    <file src="nui/sounds/beep.ogg" />
+    <file src="nui/sounds/closing.ogg" />
+    <file src="nui/sounds/done.ogg" />
+    <file src="nui/sounds/front.ogg" />
+    <file src="nui/sounds/plate_hit.ogg" />
+    <file src="nui/sounds/rear.ogg" />
+    <file src="nui/sounds/speed_alert.ogg" />
+    <file src="nui/sounds/xmit_off.ogg" />
+    <file src="nui/sounds/xmit_on.ogg" />
+</meta>
